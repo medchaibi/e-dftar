@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../image/pexels-pixabay-235994.jpg);
+    background-size: auto;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 13, 13, 0.723);
+    width: 90%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: black solid 3px ;
+}
+.title{
+    color: rgb(251, 249, 246);
+    text-align: center;
+    margin : 20px 0px ;
+}
+input{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+input:focus{
+    background-color: rgba(0, 0, 0, 0.935);
+    transform: scale(1.1);
+}
+.up,.pruduit{
+    display: flex;
+    margin: 10px;
+}
+.inpute-p{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    align-self: center;
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 0.5rem;
+}
+button:hover{
+    background-color: rgb(159, 160, 160);
+    letter-spacing: 1px;
+    transform: scale(1.1);
+}
+
+#total{
+    background-color: #a00d02;
+    border-radius: 5px;
+    padding: 3px 30px ;
+    color: white;
+    text-align: center;
+}
+#total::before{
+    content: 'total:';
+}
+.outpute{
+    width: 75%;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.boutons{
+    width: 75%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+table{
+    width: 90%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px;
+}
+#deleteAll{
+    width: 50%;
+    margin: 10px;
+}

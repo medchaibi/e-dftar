@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/d-css.css">
+    <title>e-dftar</title>
+</head>
+<body>
+    <main>
+        <section class="title">
+            <h1 class="title-t">Electronic notebook</h1>
+            <h2 class="sub-title">Electronic notebook for IMEX-CHAIBI a company</h2>
+        </section>
+        <section class="inpute-p">
+            <div class="up">
+                <INput id="date" type="date" placeholder="date" ></INput>
+                <INput id="name" type="text" placeholder="name" ></INput>
+            </div>    
+            <div class="pruduit">
+                <input type="text" placeholder="type" id="type-p">
+                <input onkeyup="gettotale()" type="number" id="cunt-p">
+                <input onkeyup="gettotale()" type="number" id="price-u">
+                <small id="total"></small>
+            </div>
+            <button id="create">create</button>
+        </section>
+        <section class="outpute">
+            <div class="search">
+                <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="in-search">
+                <div class="boutons">
+                    <button onclick="getsearchMood(this.id)" id="searchName">search by name</button>
+                    <button onclick="getsearchMood(this.id)" id="searchDate">search by date</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main>
+        <div id="deleteAll">
+
+        </div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>DATE</th>
+                <th>NAME</th>
+                <th>TYPE</th>
+                <th>COUNTITE</th>
+                <th>PRICE-u</th>
+                <th>TOTAL</th>
+                <th>UPDATE</th>
+                <th>DELETE</th>
+            </tr>
+            <Tbody id="tbody">
+            </Tbody>
+        </table>
+    </main>
+    <script src="./js/d-js.js"></script>
+</body>
+</html>
